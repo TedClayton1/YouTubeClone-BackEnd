@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'youtube_clone.apps.YoutubeCloneConfig'
+    'youtube_clone',
+    'myapp'
 ]
 
 MIDDLEWARE = [
