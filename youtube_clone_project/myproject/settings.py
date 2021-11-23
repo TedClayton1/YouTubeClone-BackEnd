@@ -74,20 +74,7 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-DATABASES = {
-    'default': {
-        'ENGINE': 'mysql.connector.django',
-        'NAME': 'youtube_clone',
-        'USER': 'root',
-        'PASSWORD': '2Bearcats',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-        'OPTIONS': {
-            'autocommit': True
-        }
 
-    }
-}
 
 
 
@@ -131,6 +118,6 @@ STATIC_URL = '/static/'
 
 
 try:
-    from youtube_clone_project.local_settings import *
+    from myproject.local_settings import *
 except ImportError:
     pass
